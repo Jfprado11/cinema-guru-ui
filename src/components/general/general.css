@@ -1,0 +1,62 @@
+/* Input
+=======================================================*/
+.Input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 354px;
+  line-height: 16px;
+}
+
+.Input-container input {
+  width: 100%;
+  outline: none;
+}
+
+.Input-container.input-light input {
+  border: 0;
+  border-bottom: 1px solid#bb000e;
+}
+.icon {
+  margin-right: 8px;
+}
+.icon--grey {
+  color: #000000;
+  opacity: 0.4;
+}
+
+.icon--red {
+  color: #e31c25;
+}
+
+.icon--red-dark {
+  color: #e31c25;
+  opacity: 0.4;
+}
+
+/* Button
+===================================================== */
+.btn {
+  color: #ffffff;
+  border-radius: 0;
+  border: 0;
+  line-height: 16px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  padding: 8px;
+}
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn-light {
+  background-color: #e31c25;
+}
+
+.btn-dark {
+  background-color: #bb000e;
+}
+
+.btn .icons-span {
+  margin-right: 8px;
+}

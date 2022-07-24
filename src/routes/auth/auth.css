@@ -1,0 +1,79 @@
+.form {
+  width: 450px;
+  height: 361px;
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+
+.header-auth {
+  width: 100%;
+  display: flex;
+}
+
+.header-auth Button {
+  flex-grow: 1;
+}
+
+/* Login Component
+===========================================*/
+
+.Login-container {
+  margin: 0 auto;
+  padding: 20px;
+  width: 354px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Login-container h2 {
+  margin-bottom: 42px;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.Login-container .input-light:nth-of-type(1) {
+  margin-bottom: 40px;
+}
+
+.Login-container .input-light:last-of-type {
+  margin-bottom: 45px;
+}
+
+.Login-container .btn-log {
+  width: 104px;
+  margin-right: -4px;
+  align-self: flex-end;
+}
+
+/* Register Component
+================================================*/
+
+.Register-container {
+  margin: 0 auto;
+  padding: 20px;
+  width: 354px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Register-container h2 {
+  margin-bottom: 42px;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.Register-container .input-light:nth-of-type(1) {
+  margin-bottom: 40px;
+}
+
+.Register-container .input-light:last-of-type {
+  margin-bottom: 45px;
+}
+
+.Register-container .btn-res {
+  width: 104px;
+  margin-right: -4px;
+  align-self: flex-end;
+}
