@@ -17,7 +17,6 @@ function Authentication({ setIsLoggedIn, setUserUsername }) {
 
   const handleSubmit = (onSubmit) => {
     onSubmit.preventDefault();
-    console.log(username, password);
     if (_switch) {
       axios
         .post(

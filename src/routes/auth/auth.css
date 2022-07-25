@@ -12,6 +12,7 @@
 
 .header-auth Button {
   flex-grow: 1;
+  height: 48px;
 }
 
 /* Login Component

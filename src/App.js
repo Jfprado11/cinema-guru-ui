@@ -2,6 +2,7 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import './App.css';
 import Authentication from './routes/auth/Authentication';
+import Dashboard from './routes/dashboard/Dashboard';
 
 export const API_URL = 'http://localhost:8000';
 
@@ -31,11 +32,11 @@ function App() {
   });
 
   return (
-    <div className="App">
+    <div className={`App ${!isLoggedIn && 'center-auth'}`}>
       {!isLoggedIn ? (
         <Authentication setIsLoggedIn={setIsLoggedIn} setUserUsername={setUserUsername} />
       ) : (
-        <h2>hola {userUsername}</h2>
+        <Dashboard userUsername={userUsername} setIsLoggedIn={setIsLoggedIn} />
       )}
     </div>
   );
