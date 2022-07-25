@@ -11,6 +11,8 @@ function Register({ username, password, setUsername, setPassword }) {
     <div className="Register-container">
       <h2>Create a new account</h2>
       <Input
+        value={username}
+        setValue={setUsername}
         className={'input-light'}
         icon={faUser}
         label={'Username:'}
@@ -18,13 +20,15 @@ function Register({ username, password, setUsername, setPassword }) {
         inputAttributes={{ color: 'icon--red-dark', size: 'sm', for: 'username' }}
       />
       <Input
+        value={password}
+        setValue={setPassword}
         className={'input-light'}
         icon={faKey}
         label={'Password:'}
         type={'password'}
         inputAttributes={{ color: 'icon--red-dark', size: 'sm', for: 'password' }}
       />
-      <Button className={'btn-dark btn-res'} icon={faPlus}>
+      <Button className={'btn-dark btn-res'} icon={faPlus} label={'submit'}>
         Sign Up
       </Button>
     </div>

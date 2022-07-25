@@ -12,6 +12,8 @@ function Login({ username, password, setUsername, setPassword }) {
     <div className="Login-container">
       <h2>Sign in with your account</h2>
       <Input
+        value={username}
+        setValue={setUsername}
         label={'Username:'}
         type={'text'}
         className={'input-light'}
@@ -19,13 +21,17 @@ function Login({ username, password, setUsername, setPassword }) {
         inputAttributes={{ color: 'icon--red-dark', size: 'sm', for: 'username' }}
       />
       <Input
+        value={password}
+        setValue={setPassword}
         label={'Password:'}
         type={'password'}
         className={'input-light'}
         icon={faKey}
         inputAttributes={{ color: 'icon--red-dark', size: 'sm', for: 'password' }}
       />
-      <Button className={'btn-log btn-dark'} icon={faKey}>Sign In</Button>
+      <Button label={'submit'} className={'btn-log btn-dark'} icon={faKey}>
+        Sign In
+      </Button>
     </div>
   );
 }
