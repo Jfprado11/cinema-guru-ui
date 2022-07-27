@@ -15,7 +15,7 @@ function Input({ label, type, className, value, setValue, icon, inputAttributes 
         )}
         {label}
       </label>
-      <input type={type} onChange={hendleInput} id={inputAttributes.for} />
+      <input type={type} onChange={hendleInput} id={inputAttributes.for} value={value} />
     </div>
   );
 }

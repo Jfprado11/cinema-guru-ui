@@ -5,7 +5,7 @@ function SearchBar({ title, setTitle }) {
     setTitle(onChange.target.value);
   };
 
-  return <input type="text" onChange={hendleInput} />;
+  return <input className="searchBar" type="text" onChange={hendleInput} placeholder="Search Movies" />;
 }
 
 export default SearchBar;

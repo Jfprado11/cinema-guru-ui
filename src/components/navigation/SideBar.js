@@ -74,7 +74,7 @@ function SideBar() {
         <ul className="sideBar-activities">
           <span className="title-activities">Latest Activities</span>
           {activities.slice(0, 10).map((item) => (
-            <Activity data={item} />
+            <Activity key={item.id} data={item} />
           ))}
         </ul>
       )}

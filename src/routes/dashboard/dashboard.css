@@ -1,0 +1,50 @@
+/* HomePage
+======================================*/
+.HomePage {
+  margin: 0;
+  padding: 85px 0 40px 100px;
+}
+
+.FavoritePage {
+  margin: 0;
+  padding: 85px 0 40px 100px;
+}
+.FavoritePage h1 {
+  width: 800px;
+  margin: 0 auto 90px;
+  border-bottom: 5px solid #e31c25;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 63px;
+  line-height: 64px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.watchlaterPage {
+  margin: 0;
+  padding: 85px 0 40px 100px;
+}
+
+.watchlaterPage h1 {
+  width: 800px;
+  margin: 0 auto 90px;
+  border-bottom: 5px solid #e31c25;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 63px;
+  line-height: 64px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.home--cards-movies {
+  margin-bottom: 110px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}

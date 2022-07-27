@@ -20,7 +20,7 @@ function Register({ username, password, setUsername, setPassword }) {
         inputAttributes={{ color: 'icon--red-dark', size: 'sm', for: 'username' }}
       />
       <Input
-        value={password}
+        value={password === false ? '' : password}
         setValue={setPassword}
         className={'input-light'}
         icon={faKey}

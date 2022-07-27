@@ -21,7 +21,7 @@ function Login({ username, password, setUsername, setPassword }) {
         inputAttributes={{ color: 'icon--red-dark', size: 'sm', for: 'username' }}
       />
       <Input
-        value={password}
+        value={password === false ? '' : password}
         setValue={setPassword}
         label={'Password:'}
         type={'password'}

@@ -6,6 +6,9 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 // components
 import Header from '../../components/navigation/Header';
 import SideBar from '../../components/navigation/SideBar';
+import HomePage from './HomePage';
+import Favorites from './Favorites';
+import WatchLater from './WatchLater';
 
 function Dashboard({ userUsername, setIsLoggedIn }) {
   return (
@@ -14,9 +17,9 @@ function Dashboard({ userUsername, setIsLoggedIn }) {
         <Header userUsername={userUsername} setIsLoggedIn={setIsLoggedIn} />
         <SideBar />
         <Routes>
-          <Route path="/" element={<h1>Home</h1>} />
-          <Route path="/favorites" element={<h1>Favorite</h1>} />
-          <Route path="/watchlater" element={<h1>Watch later</h1>} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/favorites" element={<Favorites />} />
+          <Route path="/watchlater" element={<WatchLater />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </div>

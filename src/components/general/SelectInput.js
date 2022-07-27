@@ -6,11 +6,11 @@ function SelectInput({ label, options, className, value, setValue }) {
   };
 
   return (
-    <div className={className}>
+    <div className={`select-container ${className}`}>
       <label>{label}</label>
       <select onChange={hendleSelect}>
         {options.map((option) => (
-          <option></option>
+          <option key={option}>{option}</option>
         ))}
       </select>
     </div>

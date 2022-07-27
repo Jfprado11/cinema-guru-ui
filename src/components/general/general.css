@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 354px;
+  max-width: 354px;
   line-height: 16px;
 }
 
@@ -17,6 +17,18 @@
   border: 0;
   border-bottom: 1px solid#bb000e;
 }
+.Input-container.input-dark input {
+  min-height: 21px;
+  padding: 1px;
+  border: 0;
+  border-bottom: 1px solid #bb000e;
+  background-color: #2c2c2c;
+  color: #ffffff;
+}
+.Input-container.input-dark label {
+  color: #ffffff;
+}
+
 .icon {
   margin-right: 8px;
 }
@@ -32,6 +44,30 @@
 .icon--red-dark {
   color: #e31c25;
   opacity: 0.4;
+}
+
+/* Select
+===================================================*/
+.select-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 354px;
+  line-height: 16px;
+}
+
+.select-container select {
+  width: 100%;
+  height: 22px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #bb000e;
+  background-color: #2c2c2c;
+  color: #ffffff;
+}
+
+.select-container label {
+  color: #ffffff;
 }
 
 /* Button
@@ -59,4 +95,22 @@
 
 .btn .icons-span {
   margin-right: 8px;
+}
+
+/* Search bar
+=========================================*/
+.searchBar {
+  width: 535px;
+  height: 28px;
+  padding: 6px 24px;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  background-color: #2c2c2c;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.searchBar::placeholder {
+  opacity: 60%;
 }
